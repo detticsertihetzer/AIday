@@ -12,7 +12,7 @@ Go to **github.com → Sign up**. Pick any username. DM me what you picked.
 
 ---
 
-## 2. Install GitHub CLI
+## 2. Install the GitHub CLI
 
 Open **Terminal**, paste:
 
