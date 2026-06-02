@@ -1,7 +1,13 @@
 import "server-only";
 
 import prisma from "@/lib/prisma/prisma";
-import type { CreateItemInput, ItemFilters, ItemType, KnowledgeItem } from "@/types/item";
+import type {
+  CreateItemInput,
+  ItemFilters,
+  ItemType,
+  KnowledgeItem,
+  UpdateItemInput,
+} from "@/types/item";
 import { upsertTags } from "./tags";
 
 const withTags = { tags: { include: { tag: true } } } as const;
@@ -93,4 +99,32 @@ export async function createItem(input: CreateItemInput): Promise<KnowledgeItem>
   });
 
   return toKnowledgeItem(row);
+}
+
+export async function updateItem(input: UpdateItemInput): Promise<KnowledgeItem> {
+  const tagRecords = await upsertTags(input.tags);
+
+  const row = await prisma.item.update({
+    where: { id: input.id },
+    data: {
+      title: input.title,
+      summary: input.summary,
+      content: input.content ?? null,
+      type: input.type,
+      url: input.url ?? null,
+      domain: input.domain,
+      author: input.author,
+      tags: {
+        deleteMany: {},
+        create: tagRecords.map((tag) => ({ tagId: tag.id })),
+      },
+    },
+    include: withTags,
+  });
+
+  return toKnowledgeItem(row);
+}
+
+export async function deleteItem(id: string): Promise<void> {
+  await prisma.item.delete({ where: { id } });
 }

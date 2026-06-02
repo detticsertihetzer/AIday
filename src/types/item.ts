@@ -31,6 +31,18 @@ export type CreateItemInput = {
   tags: string[];
 };
 
+export type UpdateItemInput = {
+  id: string;
+  title: string;
+  summary: string;
+  content?: string;
+  type: ItemType;
+  url?: string;
+  domain: string;
+  author: string;
+  tags: string[];
+};
+
 export type ItemFilters = {
   search?: string;
   topic?: string;
