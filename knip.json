@@ -7,11 +7,9 @@
     "scripts/utils/*",
     ".agents/hooks/*",
     "src/components/ui/*",
-    "src/lib/trpc/*",
+    "src/hooks/use-mobile.ts",
     ".opencode/plugins/lint.ts",
-    "src/lib/aws/ses.tsx",
     "src/lib/metadata.ts",
-    "src/lib/stripe.ts",
     "scripts/removers/remover.ts"
   ],
   "ignoreDependencies": [
