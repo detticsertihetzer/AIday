@@ -1,7 +1,6 @@
-import Image from "next/image";
-import Link from "next/link";
 import type React from "react";
 import CatalystBadge from "@/components/footer/catalyst-badge";
+import { SiteHeader } from "@/components/site-header";
 
 export default async function Layout({
   children,
@@ -10,17 +9,9 @@ export default async function Layout({
 }>) {
   return (
     <div className="flex w-full flex-1 flex-col">
-      <header className="container flex w-full items-center justify-end gap-4 py-4">
-        <Link
-          href="/"
-          className="mr-auto flex items-center gap-2 whitespace-pre font-medium text-lg"
-        >
-          <Image src="/icon.svg" alt="Catalyst" width={30} height={30} />
-          Catalyst
-        </Link>
-      </header>
+      <SiteHeader />
       {children}
-      <footer className="container flex w-full justify-start py-4">
+      <footer className="container flex w-full justify-start py-6">
         <CatalystBadge />
       </footer>
     </div>

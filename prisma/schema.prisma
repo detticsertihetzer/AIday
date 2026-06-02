@@ -1,0 +1,43 @@
+// Knowledge base data model. SQLite keeps the demo zero-setup and fully offline.
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/lib/prisma/generated"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model Item {
+  id        String    @id @default(cuid())
+  title     String
+  summary   String // the useful bit, shown on the card
+  content   String? // optional longer notes
+  type      String    @default("note") // "note" | "link"
+  url       String? // for links
+  domain    String
+  author    String
+  tags      ItemTag[]
+  createdAt DateTime  @default(now())
+
+  @@map("items")
+}
+
+model Tag {
+  id    String    @id @default(cuid())
+  name  String    @unique
+  items ItemTag[]
+
+  @@map("tags")
+}
+
+model ItemTag {
+  itemId String
+  tagId  String
+  item   Item   @relation(fields: [itemId], references: [id], onDelete: Cascade)
+  tag    Tag    @relation(fields: [tagId], references: [id], onDelete: Cascade)
+
+  @@id([itemId, tagId])
+  @@map("item_tags")
+}

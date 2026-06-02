@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
 
-export const metaTitle = "Catalyst - Next.js Starter Kit";
+export const metaTitle = "Design Library — Team Knowledge Base";
 export const metaDescription =
-  "Catalyst is a Next.js starter kit that helps you build modern web applications faster and easier than ever before.";
+  "A shared knowledge base where the design team captures and browses the useful things they read.";
 export const canonicalUrl = "https://catalyst.konvert7.com";
 
 export const openGraph: Metadata["openGraph"] = {
   title: metaTitle,
   description: metaDescription,
   type: "website",
-  siteName: "Catalyst",
+  siteName: "Design Library",
   locale: "en_US",
   images: [
     {

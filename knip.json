@@ -7,6 +7,7 @@
     "scripts/utils/*",
     ".agents/hooks/*",
     "src/components/ui/*",
+    "src/components/animations/*",
     "src/hooks/use-mobile.ts",
     ".opencode/plugins/lint.ts",
     "src/lib/metadata.ts",
@@ -14,6 +15,8 @@
   ],
   "ignoreDependencies": [
     "@opencode-ai/plugin",
-    "shadcn"
+    "shadcn",
+    "@libsql/client",
+    "@prisma/client"
   ]
 }
