@@ -1,6 +1,6 @@
 "use client";
 
-import { Link2, Lock, MoreHorizontal, Pencil, StickyNote, Trash2 } from "lucide-react";
+import { MoreHorizontal, Pencil, Trash2 } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useState, useTransition } from "react";
 import { toast } from "sonner";
@@ -35,7 +35,6 @@ export function ItemCard({ item }: { item: KnowledgeItem }) {
   const [deleteOpen, setDeleteOpen] = useState(false);
   const [pending, startTransition] = useTransition();
 
-  const TypeIcon = item.type === "link" ? Link2 : StickyNote;
   const colorClass = categoryColor[item.topic] ?? "color-8";
   const animClass = `anim-card-${colorClass.replace("color-", "")}`;
 
@@ -59,11 +58,9 @@ export function ItemCard({ item }: { item: KnowledgeItem }) {
               <Badge variant="secondary" className="card-pill">
                 {item.topic}
               </Badge>
-              <Badge variant="outline" className="card-tag">
+              <Badge variant="secondary" className="card-pill">
                 {item.industry}
               </Badge>
-              <TypeIcon className="size-4 shrink-0 opacity-40" />
-              {item.locked && <Lock className="size-3.5 shrink-0 opacity-50" />}
             </div>
             {!item.locked && (
               <DropdownMenu>
