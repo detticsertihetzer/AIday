@@ -13,7 +13,8 @@ type ItemRow = {
   content: string | null;
   type: string;
   url: string | null;
-  domain: string;
+  topic: string;
+  industry: string;
   author: string;
   createdAt: Date;
   tags: { tag: { name: string } }[];
@@ -27,7 +28,8 @@ function toKnowledgeItem(row: ItemRow): KnowledgeItem {
     content: row.content,
     type: row.type as ItemType,
     url: row.url,
-    domain: row.domain,
+    topic: row.topic,
+    industry: row.industry,
     author: row.author,
     createdAt: row.createdAt,
     tags: row.tags.map((t) => t.tag.name),
@@ -35,11 +37,12 @@ function toKnowledgeItem(row: ItemRow): KnowledgeItem {
 }
 
 export async function getItems(filters: ItemFilters = {}): Promise<KnowledgeItem[]> {
-  const { search, domain, tags } = filters;
+  const { search, topic, industry, tags } = filters;
 
   const rows = await prisma.item.findMany({
     where: {
-      ...(domain ? { domain } : {}),
+      ...(topic ? { topic } : {}),
+      ...(industry ? { industry } : {}),
       // AND semantics: the item must be linked to every selected tag.
       ...(tags && tags.length > 0
         ? { AND: tags.map((name) => ({ tags: { some: { tag: { name } } } })) }
@@ -81,7 +84,8 @@ export async function createItem(input: CreateItemInput): Promise<KnowledgeItem>
       content: input.content ?? null,
       type: input.type,
       url: input.url ?? null,
-      domain: input.domain,
+      topic: input.topic,
+      industry: input.industry,
       author: input.author,
       tags: { create: tagRecords.map((tag) => ({ tagId: tag.id })) },
     },

@@ -22,7 +22,8 @@ export default async function ItemPage({ params }: { params: Promise<{ id: strin
       </Link>
 
       <div className="mb-3 flex items-center gap-2">
-        <Badge variant="secondary">{item.domain}</Badge>
+        <Badge variant="secondary">{item.topic}</Badge>
+        <Badge variant="outline">{item.industry}</Badge>
         <span className="text-muted-foreground text-sm">Added by {item.author}</span>
       </div>
 

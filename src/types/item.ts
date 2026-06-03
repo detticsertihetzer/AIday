@@ -1,6 +1,8 @@
 // Shared shapes used across the app. The DAO flattens Prisma's nested tag
 // relation into a plain `tags: string[]` so UI code stays simple.
 
+import type { Industry, Topic } from "@/lib/domains";
+
 export type ItemType = "note" | "link";
 
 export type KnowledgeItem = {
@@ -10,7 +12,8 @@ export type KnowledgeItem = {
   content: string | null;
   type: ItemType;
   url: string | null;
-  domain: string;
+  topic: string;
+  industry: string;
   author: string;
   tags: string[];
   createdAt: Date;
@@ -22,13 +25,15 @@ export type CreateItemInput = {
   content?: string;
   type: ItemType;
   url?: string;
-  domain: string;
+  topic: Topic;
+  industry: Industry;
   author: string;
   tags: string[];
 };
 
 export type ItemFilters = {
   search?: string;
-  domain?: string;
+  topic?: string;
+  industry?: string;
   tags?: string[]; // matched with AND — an item must have every listed tag
 };
