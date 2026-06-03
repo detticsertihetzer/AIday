@@ -29,7 +29,7 @@ const EMPTY: ItemFormFields = {
 export function AddDialog() {
   const router = useRouter();
   const [open, setOpen] = useState(false);
-  const [type, setType] = useState<ItemType>("note");
+  const [type, setType] = useState<ItemType>("link");
   const [form, setForm] = useState(EMPTY);
   const [locked, setLocked] = useState(false);
   const [pending, startTransition] = useTransition();

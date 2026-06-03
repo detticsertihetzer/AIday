@@ -57,21 +57,21 @@ export function ItemForm({
       <div className="grid grid-cols-2 gap-2">
         <Button
           type="button"
-          variant={type === "note" ? "default" : "outline"}
-          className="rounded-full"
-          onClick={() => onTypeChange("note")}
-        >
-          <StickyNote className="size-4" />
-          Note
-        </Button>
-        <Button
-          type="button"
           variant={type === "link" ? "default" : "outline"}
           className="rounded-full"
           onClick={() => onTypeChange("link")}
         >
           <Link2 className="size-4" />
           Link
+        </Button>
+        <Button
+          type="button"
+          variant={type === "note" ? "default" : "outline"}
+          className="rounded-full"
+          onClick={() => onTypeChange("note")}
+        >
+          <StickyNote className="size-4" />
+          Note
         </Button>
       </div>
 
