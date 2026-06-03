@@ -15,6 +15,7 @@ export type KnowledgeItem = {
   topic: string;
   industry: string;
   author: string;
+  locked: boolean;
   tags: string[];
   createdAt: Date;
 };
@@ -28,6 +29,7 @@ export type CreateItemInput = {
   topic: Topic;
   industry: Industry;
   author: string;
+  locked: boolean;
   tags: string[];
 };
 
@@ -41,6 +43,7 @@ export type UpdateItemInput = {
   topic: string;
   industry: string;
   author: string;
+  locked: boolean;
   tags: string[];
 };
 

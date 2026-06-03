@@ -4,17 +4,8 @@ import { Pencil, Trash2 } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useState, useTransition } from "react";
 import { toast } from "sonner";
+import { DeleteConfirmDialog } from "@/components/delete-confirm-dialog";
 import { EditDialog } from "@/components/edit/edit-dialog";
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-} from "@/components/ui/alert-dialog";
 import { Button } from "@/components/ui/button";
 import { deleteItemAction } from "@/lib/actions/items";
 import type { KnowledgeItem } from "@/types/item";
@@ -53,26 +44,13 @@ export function ItemActions({ item }: { item: KnowledgeItem }) {
 
       <EditDialog item={item} open={editOpen} onOpenChange={setEditOpen} />
 
-      <AlertDialog open={deleteOpen} onOpenChange={setDeleteOpen}>
-        <AlertDialogContent>
-          <AlertDialogHeader>
-            <AlertDialogTitle>Delete this item?</AlertDialogTitle>
-            <AlertDialogDescription>
-              "{item.title}" will be permanently removed from the library.
-            </AlertDialogDescription>
-          </AlertDialogHeader>
-          <AlertDialogFooter>
-            <AlertDialogCancel>Cancel</AlertDialogCancel>
-            <AlertDialogAction
-              className="bg-destructive text-destructive-foreground hover:bg-destructive/90"
-              onClick={handleDelete}
-              disabled={pending}
-            >
-              {pending ? "Deleting…" : "Delete"}
-            </AlertDialogAction>
-          </AlertDialogFooter>
-        </AlertDialogContent>
-      </AlertDialog>
+      <DeleteConfirmDialog
+        open={deleteOpen}
+        onOpenChange={setDeleteOpen}
+        itemTitle={item.title}
+        pending={pending}
+        onConfirm={handleDelete}
+      />
     </>
   );
 }

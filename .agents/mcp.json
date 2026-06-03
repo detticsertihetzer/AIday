@@ -1,16 +1,19 @@
 {
   "mcpServers": {
     "playwright": {
-      "command": "npx",
+      "command": "/opt/homebrew/bin/bunx",
       "args": ["@playwright/mcp@latest"]
     },
     "shadcn": {
-      "command": "npx",
-      "args": ["shadcn@latest", "mcp"]
+      "command": "/opt/homebrew/bin/bun",
+      "args": [
+        "/Users/nora.pavel/.bun/install/global/node_modules/shadcn/dist/index.js",
+        "mcp"
+      ]
     },
     "next-devtools": {
-      "command": "npx",
-      "args": ["-y", "next-devtools-mcp@latest"]
+      "command": "/opt/homebrew/bin/bunx",
+      "args": ["next-devtools-mcp@latest"]
     }
   }
 }
