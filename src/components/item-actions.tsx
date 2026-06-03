@@ -24,6 +24,8 @@ export function ItemActions({ item }: { item: KnowledgeItem }) {
     });
   }
 
+  if (item.locked) return null;
+
   return (
     <>
       <div className="flex items-center gap-2">
