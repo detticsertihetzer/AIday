@@ -15,7 +15,7 @@ const categoryColor: Record<string, string> = {
   "Visual Design": "color-1",
   Product: "color-2",
   "UX Research": "color-4",
-  Interaction: "color-3",
+  AI: "color-3",
   Accessibility: "color-5",
   "Design Systems": "color-6",
   Tools: "color-8",

@@ -4,7 +4,7 @@
 export const TOPICS = [
   "UX Research",
   "Visual Design",
-  "Interaction",
+  "AI",
   "Product",
   "Accessibility",
   "Design Systems",
