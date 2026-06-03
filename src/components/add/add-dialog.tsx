@@ -97,7 +97,7 @@ export function AddDialog() {
           Add
         </Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-lg">
+      <DialogContent className="max-h-[90dvh] overflow-y-auto sm:max-w-lg">
         <DialogHeader>
           <DialogTitle>Add to the library</DialogTitle>
           <DialogDescription>
@@ -135,8 +135,6 @@ export function AddDialog() {
                 value={form.url}
                 onChange={(e) => update("url", e.target.value)}
               />
-              {/* CAPTURE BRANCH: add the staged "AI thinking" animation here —
-                  on paste/extract, auto-fill title, summary, and suggested tags. */}
             </div>
           )}
 
@@ -157,6 +155,7 @@ export function AddDialog() {
               value={form.summary}
               onChange={(e) => update("summary", e.target.value)}
               rows={3}
+              className="break-all"
             />
           </div>
 

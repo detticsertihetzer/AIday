@@ -1,11 +1,13 @@
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ItemActions } from "@/components/item-actions";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { getItemById } from "@/lib/dao/items";
 
-// BROWSE BRANCH owns this file: polish the detail layout, related items, etc.
+export const dynamic = "force-dynamic";
+
 export default async function ItemPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const item = await getItemById(id);
@@ -21,10 +23,13 @@ export default async function ItemPage({ params }: { params: Promise<{ id: strin
         Back to library
       </Link>
 
-      <div className="mb-3 flex items-center gap-2">
-        <Badge variant="secondary">{item.topic}</Badge>
-        <Badge variant="outline">{item.industry}</Badge>
-        <span className="text-muted-foreground text-sm">Added by {item.author}</span>
+      <div className="mb-3 flex items-center justify-between gap-2">
+        <div className="flex items-center gap-2">
+          <Badge variant="secondary">{item.topic}</Badge>
+          <Badge variant="outline">{item.industry}</Badge>
+          <span className="text-muted-foreground text-sm">Added by {item.author}</span>
+        </div>
+        <ItemActions item={item} />
       </div>
 
       <h1 className="font-bold text-3xl tracking-tight">{item.title}</h1>
