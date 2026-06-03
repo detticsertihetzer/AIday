@@ -1,7 +1,7 @@
-// The fixed set of knowledge "domains" a teammate can file an item under.
-// Single source of truth for both the Add picker and the browse filter.
+// Fixed taxonomy for classifying knowledge items.
+// Single source of truth for the Add dialog and browse filter pills.
 
-export const DOMAINS = [
+export const TOPICS = [
   "UX Research",
   "Visual Design",
   "Interaction",
@@ -12,5 +12,18 @@ export const DOMAINS = [
   "Inspiration",
 ] as const;
 
-/** @public — shared type for typing domain values across both branches. */
-export type Domain = (typeof DOMAINS)[number];
+export const INDUSTRIES = [
+  "General",
+  "Banking",
+  "Finance",
+  "Private Equity",
+  "Retail",
+  "Healthcare",
+  "Telecom",
+  "FMCG",
+  "Automotive",
+  "Public Sector",
+] as const;
+
+export type Topic = (typeof TOPICS)[number];
+export type Industry = (typeof INDUSTRIES)[number];

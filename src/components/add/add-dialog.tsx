@@ -25,10 +25,18 @@ import {
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { createItemAction } from "@/lib/actions/items";
-import { DOMAINS } from "@/lib/domains";
+import { INDUSTRIES, type Industry, TOPICS, type Topic } from "@/lib/domains";
 import type { ItemType } from "@/types/item";
 
-const EMPTY = { title: "", summary: "", content: "", url: "", domain: "", tags: "" };
+const EMPTY = {
+  title: "",
+  summary: "",
+  content: "",
+  url: "",
+  topic: "",
+  industry: "",
+  tags: "",
+};
 
 export function AddDialog() {
   const router = useRouter();
@@ -48,8 +56,8 @@ export function AddDialog() {
 
   function handleSubmit(event: React.FormEvent) {
     event.preventDefault();
-    if (!form.title.trim() || !form.domain) {
-      toast.error("Add a title and pick a domain.");
+    if (!form.title.trim() || !form.topic || !form.industry) {
+      toast.error("Add a title, pick a topic and an industry.");
       return;
     }
 
@@ -60,7 +68,8 @@ export function AddDialog() {
         content: form.content.trim() || undefined,
         type,
         url: type === "link" ? form.url.trim() || undefined : undefined,
-        domain: form.domain,
+        topic: form.topic as Topic,
+        industry: form.industry as Industry,
         author: "You",
         tags: form.tags
           .split(",")
@@ -151,23 +160,44 @@ export function AddDialog() {
             />
           </div>
 
-          <div className="flex flex-col gap-2">
-            <Label htmlFor="domain">Domain</Label>
-            <Select
-              value={form.domain}
-              onValueChange={(value) => update("domain", value)}
-            >
-              <SelectTrigger id="domain">
-                <SelectValue placeholder="Pick a domain" />
-              </SelectTrigger>
-              <SelectContent>
-                {DOMAINS.map((domain) => (
-                  <SelectItem key={domain} value={domain}>
-                    {domain}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
+          <div className="grid grid-cols-2 gap-3">
+            <div className="flex flex-col gap-2">
+              <Label htmlFor="topic">Topic</Label>
+              <Select
+                value={form.topic}
+                onValueChange={(value) => update("topic", value)}
+              >
+                <SelectTrigger id="topic">
+                  <SelectValue placeholder="Pick a topic" />
+                </SelectTrigger>
+                <SelectContent>
+                  {TOPICS.map((topic) => (
+                    <SelectItem key={topic} value={topic}>
+                      {topic}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <Label htmlFor="industry">Industry</Label>
+              <Select
+                value={form.industry}
+                onValueChange={(value) => update("industry", value)}
+              >
+                <SelectTrigger id="industry">
+                  <SelectValue placeholder="Pick an industry" />
+                </SelectTrigger>
+                <SelectContent>
+                  {INDUSTRIES.map((industry) => (
+                    <SelectItem key={industry} value={industry}>
+                      {industry}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
           </div>
 
           <div className="flex flex-col gap-2">

@@ -12,7 +12,8 @@ export function ItemCard({ item }: { item: KnowledgeItem }) {
       <Card className="h-full gap-3 transition-shadow hover:shadow-md">
         <CardHeader>
           <div className="flex items-center justify-between gap-2">
-            <Badge variant="secondary">{item.domain}</Badge>
+            <Badge variant="secondary">{item.topic}</Badge>
+            <Badge variant="outline">{item.industry}</Badge>
             <TypeIcon className="size-4 shrink-0 text-muted-foreground" />
           </div>
           <CardTitle className="text-base leading-snug group-hover:text-primary">

@@ -16,7 +16,8 @@ model Item {
   content   String? // optional longer notes
   type      String    @default("note") // "note" | "link"
   url       String? // for links
-  domain    String
+  topic     String    @map("domain") // design discipline (UX Research, Visual Design, etc.)
+  industry  String    @default("General") // client sector (Banking, Retail, etc.)
   author    String
   tags      ItemTag[]
   createdAt DateTime  @default(now())
