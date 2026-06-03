@@ -41,6 +41,7 @@
     ]
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "0.100.1",
     "@libsql/client": "0.17.3",
     "@microsoft/clarity": "1.0.2",
     "@prisma/adapter-libsql": "7.8.0",
