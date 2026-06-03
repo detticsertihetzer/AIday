@@ -38,7 +38,8 @@ export type UpdateItemInput = {
   content?: string;
   type: ItemType;
   url?: string;
-  domain: string;
+  topic: string;
+  industry: string;
   author: string;
   tags: string[];
 };

@@ -6,20 +6,20 @@ import { useRef, useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { DOMAINS } from "@/lib/domains";
+import { TOPICS } from "@/lib/domains";
 
 export function SearchFilters() {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const currentDomain = searchParams.get("domain") ?? "";
+  const currentTopic = searchParams.get("topic") ?? "";
 
   const [search, setSearch] = useState(searchParams.get("q") ?? "");
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  function pushParams(newSearch: string, newDomain: string) {
+  function pushParams(newSearch: string, newTopic: string) {
     const params = new URLSearchParams();
     if (newSearch.trim()) params.set("q", newSearch.trim());
-    if (newDomain) params.set("domain", newDomain);
+    if (newTopic) params.set("topic", newTopic);
     const qs = params.toString();
     router.replace(qs ? `/?${qs}` : "/", { scroll: false });
   }
@@ -27,11 +27,11 @@ export function SearchFilters() {
   function handleSearchChange(value: string) {
     setSearch(value);
     if (debounceRef.current) clearTimeout(debounceRef.current);
-    debounceRef.current = setTimeout(() => pushParams(value, currentDomain), 300);
+    debounceRef.current = setTimeout(() => pushParams(value, currentTopic), 300);
   }
 
-  function toggleDomain(domain: string) {
-    pushParams(search, currentDomain === domain ? "" : domain);
+  function toggleTopic(topic: string) {
+    pushParams(search, currentTopic === topic ? "" : topic);
   }
 
   return (
@@ -58,15 +58,15 @@ export function SearchFilters() {
       </div>
 
       <div className="flex flex-wrap gap-2">
-        {DOMAINS.map((domain) => (
+        {TOPICS.map((topic) => (
           <Badge
-            key={domain}
-            variant={currentDomain === domain ? "default" : "outline"}
+            key={topic}
+            variant={currentTopic === topic ? "default" : "outline"}
             className="cursor-pointer select-none gap-1"
-            onClick={() => toggleDomain(domain)}
+            onClick={() => toggleTopic(topic)}
           >
-            {domain}
-            {currentDomain === domain && <X className="size-3" />}
+            {topic}
+            {currentTopic === topic && <X className="size-3" />}
           </Badge>
         ))}
       </div>

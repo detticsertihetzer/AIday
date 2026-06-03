@@ -7,11 +7,11 @@ import { logger } from "@/lib/logger";
 export default async function Home({
   searchParams,
 }: {
-  searchParams: Promise<{ q?: string; domain?: string }>;
+  searchParams: Promise<{ q?: string; topic?: string }>;
 }) {
-  const { q, domain } = await searchParams;
-  const items = await getItems({ search: q, domain });
-  const isFiltered = Boolean(q?.trim() || domain);
+  const { q, topic } = await searchParams;
+  const items = await getItems({ search: q, topic });
+  const isFiltered = Boolean(q?.trim() || topic);
 
   logger.info(`Knowledge base home rendered with ${items.length} items`);
 

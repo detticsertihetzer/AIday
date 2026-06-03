@@ -24,7 +24,7 @@ import {
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { updateItemAction } from "@/lib/actions/items";
-import { DOMAINS } from "@/lib/domains";
+import { INDUSTRIES, TOPICS } from "@/lib/domains";
 import type { ItemType, KnowledgeItem } from "@/types/item";
 
 interface EditDialogProps {
@@ -41,7 +41,8 @@ export function EditDialog({ item, open, onOpenChange }: EditDialogProps) {
     summary: item.summary,
     content: item.content ?? "",
     url: item.url ?? "",
-    domain: item.domain,
+    topic: item.topic,
+    industry: item.industry,
     tags: item.tags.join(", "),
   });
   const [pending, startTransition] = useTransition();
@@ -54,7 +55,8 @@ export function EditDialog({ item, open, onOpenChange }: EditDialogProps) {
         summary: item.summary,
         content: item.content ?? "",
         url: item.url ?? "",
-        domain: item.domain,
+        topic: item.topic,
+        industry: item.industry,
         tags: item.tags.join(", "),
       });
     }
@@ -66,8 +68,8 @@ export function EditDialog({ item, open, onOpenChange }: EditDialogProps) {
 
   function handleSubmit(event: React.FormEvent) {
     event.preventDefault();
-    if (!form.title.trim() || !form.domain) {
-      toast.error("Add a title and pick a domain.");
+    if (!form.title.trim() || !form.topic) {
+      toast.error("Add a title and pick a topic.");
       return;
     }
 
@@ -79,7 +81,8 @@ export function EditDialog({ item, open, onOpenChange }: EditDialogProps) {
         content: form.content.trim() || undefined,
         type,
         url: type === "link" ? form.url.trim() || undefined : undefined,
-        domain: form.domain,
+        topic: form.topic,
+        industry: form.industry,
         author: item.author,
         tags: form.tags
           .split(",")
@@ -94,7 +97,7 @@ export function EditDialog({ item, open, onOpenChange }: EditDialogProps) {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-lg">
+      <DialogContent className="max-h-[90dvh] overflow-y-auto sm:max-w-lg">
         <DialogHeader>
           <DialogTitle>Edit item</DialogTitle>
           <DialogDescription>Update this library entry.</DialogDescription>
@@ -145,6 +148,7 @@ export function EditDialog({ item, open, onOpenChange }: EditDialogProps) {
             <Label htmlFor="edit-summary">The useful bit</Label>
             <Textarea
               id="edit-summary"
+              className="break-all"
               placeholder="What's worth remembering about this?"
               value={form.summary}
               onChange={(e) => update("summary", e.target.value)}
@@ -153,18 +157,34 @@ export function EditDialog({ item, open, onOpenChange }: EditDialogProps) {
           </div>
 
           <div className="flex flex-col gap-2">
-            <Label htmlFor="edit-domain">Domain</Label>
-            <Select
-              value={form.domain}
-              onValueChange={(value) => update("domain", value)}
-            >
-              <SelectTrigger id="edit-domain">
-                <SelectValue placeholder="Pick a domain" />
+            <Label htmlFor="edit-topic">Topic</Label>
+            <Select value={form.topic} onValueChange={(value) => update("topic", value)}>
+              <SelectTrigger id="edit-topic">
+                <SelectValue placeholder="Pick a topic" />
               </SelectTrigger>
               <SelectContent>
-                {DOMAINS.map((domain) => (
-                  <SelectItem key={domain} value={domain}>
-                    {domain}
+                {TOPICS.map((topic) => (
+                  <SelectItem key={topic} value={topic}>
+                    {topic}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <Label htmlFor="edit-industry">Industry</Label>
+            <Select
+              value={form.industry}
+              onValueChange={(value) => update("industry", value)}
+            >
+              <SelectTrigger id="edit-industry">
+                <SelectValue placeholder="Pick an industry" />
+              </SelectTrigger>
+              <SelectContent>
+                {INDUSTRIES.map((industry) => (
+                  <SelectItem key={industry} value={industry}>
+                    {industry}
                   </SelectItem>
                 ))}
               </SelectContent>

@@ -112,7 +112,8 @@ export async function updateItem(input: UpdateItemInput): Promise<KnowledgeItem>
       content: input.content ?? null,
       type: input.type,
       url: input.url ?? null,
-      domain: input.domain,
+      topic: input.topic,
+      industry: input.industry,
       author: input.author,
       tags: {
         deleteMany: {},
