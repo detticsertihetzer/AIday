@@ -1,6 +1,7 @@
 "use client";
 
-import { Link2, Lock, StickyNote } from "lucide-react";
+import { Link2, Lock, Sparkles, StickyNote } from "lucide-react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { DialogFooter } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
@@ -38,6 +39,7 @@ interface ItemFormProps {
   onFieldChange: (field: keyof ItemFormFields, value: string) => void;
   onLockedChange: (locked: boolean) => void;
   onSubmit: (e: React.FormEvent) => void;
+  onSummarize?: (url: string) => Promise<string | null>;
 }
 
 export function ItemForm({
@@ -51,7 +53,21 @@ export function ItemForm({
   onFieldChange,
   onLockedChange,
   onSubmit,
+  onSummarize,
 }: ItemFormProps) {
+  const [summarizing, setSummarizing] = useState(false);
+
+  async function handleSummarize() {
+    if (!onSummarize || !form.url.trim()) return;
+    setSummarizing(true);
+    try {
+      const result = await onSummarize(form.url.trim());
+      if (result) onFieldChange("summary", result);
+    } finally {
+      setSummarizing(false);
+    }
+  }
+
   return (
     <form onSubmit={onSubmit} className="flex flex-col gap-4">
       <div className="grid grid-cols-2 gap-2">
@@ -85,6 +101,19 @@ export function ItemForm({
             value={form.url}
             onChange={(e) => onFieldChange("url", e.target.value)}
           />
+          {onSummarize && form.url.trim() && (
+            <Button
+              type="button"
+              variant="outline"
+              size="sm"
+              className="self-start rounded-full"
+              disabled={summarizing}
+              onClick={handleSummarize}
+            >
+              <Sparkles className="size-3.5" />
+              {summarizing ? "Summarising…" : "Generate summary"}
+            </Button>
+          )}
         </div>
       )}
 

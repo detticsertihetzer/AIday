@@ -13,6 +13,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { createItemAction } from "@/lib/actions/items";
+import { summarizeUrlAction } from "@/lib/actions/summarize";
 import type { Industry, Topic } from "@/lib/domains";
 import type { ItemType } from "@/types/item";
 
@@ -42,6 +43,15 @@ export function AddDialog() {
     setForm(EMPTY);
     setType("note");
     setLocked(false);
+  }
+
+  async function handleSummarize(url: string): Promise<string | null> {
+    const result = await summarizeUrlAction(url);
+    if ("error" in result) {
+      toast.error(result.error);
+      return null;
+    }
+    return result.summary;
   }
 
   function handleSubmit(event: React.FormEvent) {
@@ -100,6 +110,7 @@ export function AddDialog() {
           onFieldChange={update}
           onLockedChange={setLocked}
           onSubmit={handleSubmit}
+          onSummarize={handleSummarize}
         />
       </DialogContent>
     </Dialog>
