@@ -7,19 +7,16 @@ import { toast } from "sonner";
 import { DeleteConfirmDialog } from "@/components/delete-confirm-dialog";
 import { EditDialog } from "@/components/edit/edit-dialog";
 import { Button } from "@/components/ui/button";
-import { useAuthorIdentity } from "@/hooks/use-author-identity";
 import { deleteItemAction } from "@/lib/actions/items";
 import type { KnowledgeItem } from "@/types/item";
 
 export function ItemActions({ item }: { item: KnowledgeItem }) {
   const router = useRouter();
-  const { author } = useAuthorIdentity();
   const [editOpen, setEditOpen] = useState(false);
   const [deleteOpen, setDeleteOpen] = useState(false);
   const [pending, startTransition] = useTransition();
 
-  const isOwner = author.trim() !== "" && author.trim() === item.author;
-  if (item.locked && !isOwner) return null;
+  if (item.locked) return null;
 
   function handleDelete() {
     startTransition(async () => {

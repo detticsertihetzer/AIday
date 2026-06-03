@@ -14,7 +14,6 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { useAuthorIdentity } from "@/hooks/use-author-identity";
 import { deleteItemAction } from "@/lib/actions/items";
 import { cn } from "@/lib/utils";
 import type { KnowledgeItem } from "@/types/item";
@@ -32,12 +31,9 @@ const categoryColor: Record<string, string> = {
 
 export function ItemCard({ item }: { item: KnowledgeItem }) {
   const router = useRouter();
-  const { author } = useAuthorIdentity();
   const [editOpen, setEditOpen] = useState(false);
   const [deleteOpen, setDeleteOpen] = useState(false);
   const [pending, startTransition] = useTransition();
-
-  const isOwner = author.trim() !== "" && author.trim() === item.author;
 
   const TypeIcon = item.type === "link" ? Link2 : StickyNote;
   const colorClass = categoryColor[item.topic] ?? "color-8";
@@ -69,7 +65,7 @@ export function ItemCard({ item }: { item: KnowledgeItem }) {
               <TypeIcon className="size-4 shrink-0 opacity-40" />
               {item.locked && <Lock className="size-3.5 shrink-0 opacity-50" />}
             </div>
-            {(!item.locked || isOwner) && (
+            {!item.locked && (
               <DropdownMenu>
                 <DropdownMenuTrigger
                   className="flex size-6 items-center justify-center rounded opacity-20 hover:opacity-60"

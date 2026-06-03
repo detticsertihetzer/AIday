@@ -12,9 +12,6 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { useAuthorIdentity } from "@/hooks/use-author-identity";
 import { createItemAction } from "@/lib/actions/items";
 import type { Industry, Topic } from "@/lib/domains";
 import type { ItemType } from "@/types/item";
@@ -31,7 +28,6 @@ const EMPTY: ItemFormFields = {
 
 export function AddDialog() {
   const router = useRouter();
-  const { author, setAuthor } = useAuthorIdentity();
   const [open, setOpen] = useState(false);
   const [type, setType] = useState<ItemType>("note");
   const [form, setForm] = useState(EMPTY);
@@ -55,11 +51,6 @@ export function AddDialog() {
       return;
     }
 
-    if (!author.trim()) {
-      toast.error("Enter your name before adding an entry.");
-      return;
-    }
-
     startTransition(async () => {
       await createItemAction({
         title: form.title.trim(),
@@ -69,7 +60,7 @@ export function AddDialog() {
         url: type === "link" ? form.url.trim() || undefined : undefined,
         topic: form.topic as Topic,
         industry: form.industry as Industry,
-        author: author.trim(),
+        author: "You",
         locked,
         tags: form.tags
           .split(",")
@@ -99,15 +90,6 @@ export function AddDialog() {
             Capture something useful for the design team.
           </DialogDescription>
         </DialogHeader>
-        <div className="flex flex-col gap-1.5">
-          <Label htmlFor="author-name">Your name</Label>
-          <Input
-            id="author-name"
-            placeholder="e.g. Nora"
-            value={author}
-            onChange={(e) => setAuthor(e.target.value)}
-          />
-        </div>
         <ItemForm
           type={type}
           form={form}

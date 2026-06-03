@@ -1,0 +1,26 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "Design Library" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - img [ref=e6]
+          - text: Design Library
+        - button "Add" [ref=e8]:
+          - img
+          - text: Add
+    - main [ref=e9]:
+      - generic [ref=e10]:
+        - heading "Team Knowledge" [level=1] [ref=e11]
+        - paragraph [ref=e12]: 0 useful things the design team has gathered.
+      - paragraph [ref=e13]: Nothing here yet — hit “Add” to capture the first piece of knowledge.
+    - contentinfo [ref=e14]:
+      - link "Made with Catalyst Catalyst" [ref=e15] [cursor=pointer]:
+        - /url: https://catalyst.konvert7.com/?utm_source=localhost&utm_medium=referral&utm_campaign=made-with-badge
+        - generic [ref=e16]: Made with
+        - img "Catalyst" [ref=e17]
+        - generic [ref=e18]: Catalyst
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e24] [cursor=pointer]:
+    - img [ref=e25]
+  - alert [ref=e28]

@@ -1,0 +1,103 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "Design Library" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - img [ref=e6]
+          - text: Design Library
+        - button "Add entry" [ref=e8] [cursor=pointer]:
+          - generic [ref=e13]: Add entry
+    - main [ref=e14]:
+      - generic [ref=e15]:
+        - generic [ref=e16]:
+          - paragraph [ref=e17]: Team Knowledge Base
+          - heading "Good stuff, collected" [level=1] [ref=e18]:
+            - text: Good stuff,
+            - generic [ref=e19]:
+              - text: collected
+              - img
+          - paragraph [ref=e20]: Useful things the design team has gathered — live, searchable, always growing.
+        - generic [ref=e21]:
+          - generic [ref=e22] [cursor=pointer]: Visual Design
+          - generic [ref=e23] [cursor=pointer]: Colour tokens
+          - generic [ref=e24] [cursor=pointer]: How we name and scale our palette across themes.
+          - generic [ref=e25] [cursor=pointer]: UX Research
+          - generic [ref=e26] [cursor=pointer]: 5-second test
+          - generic [ref=e27] [cursor=pointer]: First impressions captured before bias kicks in.
+          - generic [ref=e28] [cursor=pointer]: Design Systems
+          - generic [ref=e29] [cursor=pointer]: Component API
+          - generic [ref=e30] [cursor=pointer]: Props, variants and the contract each component makes.
+          - generic [ref=e31] [cursor=pointer]: Inspiration
+          - generic [ref=e32] [cursor=pointer]: Motion library
+          - generic [ref=e33] [cursor=pointer]: Easing curves and timings the team keeps coming back to.
+          - generic [ref=e34] [cursor=pointer]: Accessibility
+          - generic [ref=e35] [cursor=pointer]: Contrast check
+          - generic [ref=e36] [cursor=pointer]: WCAG ratios and when to bend the rules responsibly.
+      - generic [ref=e37]:
+        - heading "The 08 categories." [level=2] [ref=e38]:
+          - text: The 08
+          - emphasis [ref=e39]: categories.
+        - paragraph [ref=e40]: The library is organised into 8 families — each one a different lens on how the design team thinks, researches, and builds.
+      - generic [ref=e43]:
+        - img [ref=e44]
+        - textbox "Search topics…" [ref=e47]
+      - generic [ref=e48]:
+        - button "01 / 08 UX Research 0 entries →" [ref=e49] [cursor=pointer]:
+          - generic [ref=e50]: 01 / 08
+          - generic [ref=e51]: UX Research
+          - generic [ref=e53]:
+            - generic [ref=e54]: 0 entries
+            - generic [ref=e55]: →
+        - button "02 / 08 Visual Design 0 entries →" [ref=e56] [cursor=pointer]:
+          - generic [ref=e57]: 02 / 08
+          - generic [ref=e58]: Visual Design
+          - generic [ref=e60]:
+            - generic [ref=e61]: 0 entries
+            - generic [ref=e62]: →
+        - button "03 / 08 Interaction 0 entries →" [ref=e63] [cursor=pointer]:
+          - generic [ref=e64]: 03 / 08
+          - generic [ref=e65]: Interaction
+          - generic [ref=e67]:
+            - generic [ref=e68]: 0 entries
+            - generic [ref=e69]: →
+        - button "04 / 08 Product 0 entries →" [ref=e70] [cursor=pointer]:
+          - generic [ref=e71]: 04 / 08
+          - generic [ref=e72]: Product
+          - generic [ref=e74]:
+            - generic [ref=e75]: 0 entries
+            - generic [ref=e76]: →
+        - button "05 / 08 Accessibility 0 entries →" [ref=e77] [cursor=pointer]:
+          - generic [ref=e78]: 05 / 08
+          - generic [ref=e79]: Accessibility
+          - generic [ref=e81]:
+            - generic [ref=e82]: 0 entries
+            - generic [ref=e83]: →
+        - button "06 / 08 Design Systems 0 entries →" [ref=e84] [cursor=pointer]:
+          - generic [ref=e85]: 06 / 08
+          - generic [ref=e86]: Design Systems
+          - generic [ref=e88]:
+            - generic [ref=e89]: 0 entries
+            - generic [ref=e90]: →
+        - button "07 / 08 Tools 0 entries →" [ref=e91] [cursor=pointer]:
+          - generic [ref=e92]: 07 / 08
+          - generic [ref=e93]: Tools
+          - generic [ref=e95]:
+            - generic [ref=e96]: 0 entries
+            - generic [ref=e97]: →
+        - button "08 / 08 Inspiration 0 entries →" [ref=e98] [cursor=pointer]:
+          - generic [ref=e99]: 08 / 08
+          - generic [ref=e100]: Inspiration
+          - generic [ref=e102]:
+            - generic [ref=e103]: 0 entries
+            - generic [ref=e104]: →
+    - contentinfo [ref=e105]:
+      - link "Made with Catalyst Catalyst" [ref=e106] [cursor=pointer]:
+        - /url: https://catalyst.konvert7.com/?utm_source=localhost&utm_medium=referral&utm_campaign=made-with-badge
+        - generic [ref=e107]: Made with
+        - img "Catalyst" [ref=e108]
+        - generic [ref=e109]: Catalyst
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e115] [cursor=pointer]:
+    - img [ref=e116]
+  - alert [ref=e119]

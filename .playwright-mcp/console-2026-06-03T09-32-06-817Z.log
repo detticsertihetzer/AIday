@@ -1,0 +1,2 @@
+[    1483ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://www.svgbackgrounds.com/svg/doodles-underlines/_attr.json:0
+[    1544ms] [LOG] Something went wrong (attr): SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON @ https://www.svgbackgrounds.com/wp-content/themes/app/js/SVG_ELEMENTS.js:24

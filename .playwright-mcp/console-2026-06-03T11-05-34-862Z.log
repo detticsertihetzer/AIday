@@ -1,0 +1,928 @@
+[    2498ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[    3767ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[    4560ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[    4616ms] [LOG] [Fast Refresh] done in 156ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[    4836ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[    4901ms] [LOG] [Fast Refresh] done in 166ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[   48173ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[   48649ms] [LOG] [Fast Refresh] done in 551ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[   57385ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[   57406ms] [LOG] [Fast Refresh] done in 122ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[   59467ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[   59550ms] [LOG] [Fast Refresh] done in 185ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[   94809ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[   95926ms] [LOG] [Fast Refresh] done in 1221ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  106684ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  107595ms] [LOG] [Fast Refresh] done in 1014ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  109812ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  109975ms] [LOG] [Fast Refresh] done in 270ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  372973ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  373166ms] [LOG] [Fast Refresh] done in 296ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  387624ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  388405ms] [LOG] [Fast Refresh] done in 811ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  420370ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  420468ms] [LOG] [Fast Refresh] done in 202ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  442862ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  443386ms] [LOG] [Fast Refresh] done in 595ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  473181ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  473186ms] [LOG] [Fast Refresh] done in 107ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  730914ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  731377ms] [LOG] [Fast Refresh] done in 565ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  734743ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  734794ms] [LOG] [Fast Refresh] done in 152ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  735313ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  735495ms] [LOG] [Fast Refresh] done in 282ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  740426ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  740464ms] [LOG] [Fast Refresh] done in 139ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  790714ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  791236ms] [LOG] [Fast Refresh] done in 625ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  806496ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  809499ms] ReferenceError: DialogTrigger is not defined
+    at AddDialog (http://localhost:3000/_next/static/chunks/src_0xbyyj1._.js?id=%255Bproject%255D%252Fsrc%252Fcomponents%252Fadd%252Fadd-dialog.tsx+%255Bapp-client%255D+%2528ecmascript%2529:133:217)
+    at Object.react_stack_bottom_frame (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:15037:24)
+    at renderWithHooks (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:4620:24)
+    at updateFunctionComponent (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6081:21)
+    at beginWork (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6691:24)
+    at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at performUnitOfWork (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9555:97)
+    at workLoopSync (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9449:40)
+    at renderRootSync (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9433:13)
+    at performWorkOnRoot (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:186)
+    at performSyncWorkOnRoot (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10263:9)
+    at flushSyncWorkAcrossRoots_impl (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10179:316)
+    at flushSyncWork$1 (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9230:86)
+    at Object.scheduleRefresh (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:299:13)
+    at http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:391:33
+    at Set.forEach (<anonymous>)
+    at Object.performReactRefresh (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:384:38)
+    at applyUpdate (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:878:31)
+    at http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:886:13
+[  808360ms] [LOG] [Fast Refresh] done in 1766ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  808512ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  809605ms] [LOG] [Fast Refresh] done in 1194ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  809868ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  810095ms] [LOG] [Fast Refresh] done in 329ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  810880ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  811224ms] [LOG] [Fast Refresh] done in 446ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  812884ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  812988ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/:0
+[  828439ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  842268ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  843332ms] [ERROR] Encountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template). @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:3272
+[  843448ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  848293ms] [LOG] [Fast Refresh] done in 4949ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  854420ms] ReferenceError: DialogTrigger is not defined
+    at AddDialog (http://localhost:3000/_next/static/chunks/src_0xbyyj1._.js:2458:217)
+    at Object.react_stack_bottom_frame (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:15037:24)
+    at renderWithHooks (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:4620:24)
+    at updateFunctionComponent (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6081:21)
+    at beginWork (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6665:639)
+    at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at performUnitOfWork (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9555:97)
+    at workLoopSync (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9449:40)
+    at renderRootSync (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9433:13)
+    at performWorkOnRoot (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9098:47)
+    at performWorkOnRootViaSchedulerTask (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64)
+[  858436ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  858891ms] [LOG] [Fast Refresh] done in 558ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  859729ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  860168ms] [LOG] [Fast Refresh] done in 542ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  872821ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  873272ms] [LOG] [Fast Refresh] done in 552ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  873643ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  875312ms] [LOG] [Fast Refresh] done in 1769ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  875695ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  875702ms] [LOG] [Fast Refresh] done in 108ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  881853ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  892563ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  897009ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  897061ms] [LOG] [Fast Refresh] done in 153ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  897884ms] [WARNING] The resource http://localhost:3000/_next/static/media/a343f882a40d2cc9-s.p.0kho-wj7-y-w1.woff2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:3000/:0
+[  897884ms] [WARNING] The resource http://localhost:3000/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:3000/:0
+[  908984ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  909778ms] [LOG] [Fast Refresh] done in 847ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  912341ms] [WARNING] The resource http://localhost:3000/_next/static/media/a343f882a40d2cc9-s.p.0kho-wj7-y-w1.woff2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:3000/:0
+[  912342ms] [WARNING] The resource http://localhost:3000/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:3000/:0
+[  914090ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  914302ms] [LOG] [Fast Refresh] done in 286ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  923102ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  923698ms] [ERROR] ./src/components/add-button.tsx:159:7
+Expected corresponding JSX closing tag for <Button>
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of src/components/add-button.tsx:
+./src/components/add-button.tsx:159:7
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Import traces:
+  Client Component Browser:
+    ./src/components/add-button.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/add-button.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:3272
+[  924320ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  924413ms] [ERROR] ./src/components/add-button.tsx:159:7
+Expected corresponding JSX closing tag for <Button>
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of src/components/add-button.tsx:
+./src/components/add-button.tsx:159:7
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Import traces:
+  Client Component Browser:
+    ./src/components/add-button.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/add-button.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:3272
+[  926890ms] [WARNING] The resource http://localhost:3000/_next/static/media/a343f882a40d2cc9-s.p.0kho-wj7-y-w1.woff2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:3000/:0
+[  926890ms] [WARNING] The resource http://localhost:3000/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:3000/:0
+[  928391ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  929868ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/:0
+[  933462ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0bruynb._.js:15305
+[  933537ms] Error: ./src/components/add-button.tsx:159:7
+Expected corresponding JSX closing tag for <Button>
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of src/components/add-button.tsx:
+./src/components/add-button.tsx:159:7
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Import traces:
+  Client Component Browser:
+    ./src/components/add-button.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/add-button.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component]
+
+
+    at getCompilationErrors (file:///Users/nora.pavel/AIday/node_modules/next/dist/server/dev/hot-reloader-turbopack.js:1186:63)
+    at getCompilationError (file:///Users/nora.pavel/AIday/node_modules/next/dist/server/lib/dev-bundler-service.js:44:55)
+    at getCompilationError (file:///Users/nora.pavel/AIday/node_modules/next/dist/server/dev/next-dev-server.js:719:42)
+    at findPageComponents (file:///Users/nora.pavel/AIday/node_modules/next/dist/server/dev/next-dev-server.js:689:43)
+    at async renderErrorToResponseImpl (file:///Users/nora.pavel/AIday/node_modules/next/dist/server/base-server.js:1745:37)
+    at processTicksAndRejections (unknown:7:39)
+[  936626ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  936644ms] [ERROR] ./src/components/add-button.tsx:159:7
+Expected corresponding JSX closing tag for <Button>
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of src/components/add-button.tsx:
+./src/components/add-button.tsx:159:7
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Import traces:
+  Client Component Browser:
+    ./src/components/add-button.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/add-button.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  936729ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  936786ms] [ERROR] ./src/components/add-button.tsx:159:7
+Expected corresponding JSX closing tag for <Button>
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of src/components/add-button.tsx:
+./src/components/add-button.tsx:159:7
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Import traces:
+  Client Component Browser:
+    ./src/components/add-button.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/add-button.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  936786ms] [ERROR] ./src/components/add-button.tsx:159:7
+Expected corresponding JSX closing tag for <Button>
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of src/components/add-button.tsx:
+./src/components/add-button.tsx:159:7
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Import traces:
+  Client Component Browser:
+    ./src/components/add-button.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/add-button.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  937479ms] [ERROR] ./src/components/add-button.tsx:159:7
+Expected corresponding JSX closing tag for <Button>
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of src/components/add-button.tsx:
+./src/components/add-button.tsx:159:7
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Import traces:
+  Client Component Browser:
+    ./src/components/add-button.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/add-button.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  937577ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  950370ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  950479ms] [ERROR] ./src/components/add-button.tsx:159:7
+Expected corresponding JSX closing tag for <Button>
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of src/components/add-button.tsx:
+./src/components/add-button.tsx:159:7
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Import traces:
+  Client Component Browser:
+    ./src/components/add-button.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/add-button.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  950494ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/:0
+[  952214ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0bruynb._.js:15305
+[  952247ms] Error: ./src/components/add-button.tsx:159:7
+Expected corresponding JSX closing tag for <Button>
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of src/components/add-button.tsx:
+./src/components/add-button.tsx:159:7
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Import traces:
+  Client Component Browser:
+    ./src/components/add-button.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/add-button.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component]
+
+
+    at <unknown> (Error: ./src/components/add-button.tsx:159:7)
+    at <unknown> (./src/components/add-button.tsx:159:7)
+    at getCompilationErrors (file:///Users/nora.pavel/AIday/node_modules/next/dist/server/dev/hot-reloader-turbopack.js:1186:63)
+    at getCompilationError (file:///Users/nora.pavel/AIday/node_modules/next/dist/server/lib/dev-bundler-service.js:44:55)
+    at getCompilationError (file:///Users/nora.pavel/AIday/node_modules/next/dist/server/dev/next-dev-server.js:719:42)
+    at findPageComponents (file:///Users/nora.pavel/AIday/node_modules/next/dist/server/dev/next-dev-server.js:689:43)
+    at renderErrorToResponseImpl (file:///Users/nora.pavel/AIday/node_modules/next/dist/server/base-server.js:1745:37)
+    at processTicksAndRejections
+[  953483ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  953492ms] [ERROR] ./src/components/add-button.tsx:159:7
+Expected corresponding JSX closing tag for <Button>
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of src/components/add-button.tsx:
+./src/components/add-button.tsx:159:7
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Import traces:
+  Client Component Browser:
+    ./src/components/add-button.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/add-button.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  953492ms] [ERROR] ./src/components/add-button.tsx:159:7
+Expected corresponding JSX closing tag for <Button>
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of src/components/add-button.tsx:
+./src/components/add-button.tsx:159:7
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Import traces:
+  Client Component Browser:
+    ./src/components/add-button.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/add-button.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  953609ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  953827ms] [ERROR] ./src/components/add-button.tsx:159:7
+Expected corresponding JSX closing tag for <Button>
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of src/components/add-button.tsx:
+./src/components/add-button.tsx:159:7
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Import traces:
+  Client Component Browser:
+    ./src/components/add-button.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/add-button.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  991613ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  991693ms] [ERROR] ./src/components/add-button.tsx:159:7
+Expected corresponding JSX closing tag for <Button>
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of src/components/add-button.tsx:
+./src/components/add-button.tsx:159:7
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Import traces:
+  Client Component Browser:
+    ./src/components/add-button.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/add-button.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 1005237ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[ 1005316ms] [ERROR] ./src/components/add-button.tsx:159:7
+Expected corresponding JSX closing tag for <Button>
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of src/components/add-button.tsx:
+./src/components/add-button.tsx:159:7
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Import traces:
+  Client Component Browser:
+    ./src/components/add-button.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/add-button.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 1005329ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/:0
+[ 1006893ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0bruynb._.js:15305
+[ 1006919ms] Error: ./src/components/add-button.tsx:159:7
+Expected corresponding JSX closing tag for <Button>
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of src/components/add-button.tsx:
+./src/components/add-button.tsx:159:7
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Import traces:
+  Client Component Browser:
+    ./src/components/add-button.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/add-button.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component]
+
+
+    at <unknown> (Error: ./src/components/add-button.tsx:159:7)
+    at <unknown> (./src/components/add-button.tsx:159:7)
+    at getCompilationErrors (file:///Users/nora.pavel/AIday/node_modules/next/dist/server/dev/hot-reloader-turbopack.js:1186:63)
+    at getCompilationError (file:///Users/nora.pavel/AIday/node_modules/next/dist/server/lib/dev-bundler-service.js:44:55)
+    at getCompilationError (file:///Users/nora.pavel/AIday/node_modules/next/dist/server/dev/next-dev-server.js:719:42)
+    at findPageComponents (file:///Users/nora.pavel/AIday/node_modules/next/dist/server/dev/next-dev-server.js:689:43)
+    at renderErrorToResponseImpl (file:///Users/nora.pavel/AIday/node_modules/next/dist/server/base-server.js:1745:37)
+    at processTicksAndRejections
+[ 1008030ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[ 1008040ms] [ERROR] ./src/components/add-button.tsx:159:7
+Expected corresponding JSX closing tag for <Button>
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of src/components/add-button.tsx:
+./src/components/add-button.tsx:159:7
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Import traces:
+  Client Component Browser:
+    ./src/components/add-button.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/add-button.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 1008040ms] [ERROR] ./src/components/add-button.tsx:159:7
+Expected corresponding JSX closing tag for <Button>
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of src/components/add-button.tsx:
+./src/components/add-button.tsx:159:7
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Import traces:
+  Client Component Browser:
+    ./src/components/add-button.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/add-button.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 1008180ms] [ERROR] ./src/components/add-button.tsx:159:7
+Expected corresponding JSX closing tag for <Button>
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of src/components/add-button.tsx:
+./src/components/add-button.tsx:159:7
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Import traces:
+  Client Component Browser:
+    ./src/components/add-button.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/add-button.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 1008280ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[ 1026463ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[ 1026568ms] [ERROR] ./src/components/add-button.tsx:159:7
+Expected corresponding JSX closing tag for <Button>
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of src/components/add-button.tsx:
+./src/components/add-button.tsx:159:7
+  157 |         Add entry
+  158 |       </div>
+> 159 |     </button>
+      |       ^^^^^^
+  160 |   );
+  161 | }
+  162 |
+
+Import traces:
+  Client Component Browser:
+    ./src/components/add-button.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Client Component Browser]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/add-button.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Client Component SSR]
+    ./src/components/add/add-dialog.tsx [Server Component]
+    ./src/components/site-header.tsx [Server Component]
+    ./src/app/(public)/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[ 1027633ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed:  @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2342
+[ 1028691ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2342
+[ 1029705ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2342
+[ 1031841ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Connection closed before receiving a handshake response @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2342
+[ 1032846ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2342
+[ 1033851ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2342
+[ 1117340ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/:0
+[ 1117647ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0bruynb._.js:15305
+[ 1117725ms] Error: An unexpected Turbopack error occurred. Please see the output of `next dev` for more details.
+    at getServerError (http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:2075:62)
+    at http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:3676:27
+[ 1117844ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[ 1118004ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[ 1118008ms] [LOG] [Fast Refresh] done in 105ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[ 1127122ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed:  @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2342
+[ 1128134ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2342
+[ 1129139ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2342
+[ 1130142ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2342
+[ 1131146ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2342
+[ 1132149ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2342
+[ 1137157ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2342
+[ 1142178ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[ 1149046ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/:0
+[ 1149718ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0bruynb._.js:15305
+[ 1149746ms] Error: Failed to load external module @prisma/client-2c3a283f134fdcb6/runtime/client: ResolveMessage: Cannot find module '@prisma/client-2c3a283f134fdcb6/runtime/client' from '/Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[root-of-the-server]__0tg1nyq._.js'
+    at externalRequire (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:624:19)
+    at module evaluation (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[root-of-the-server]__0tg1nyq._.js:10804:35)
+    at <anonymous> (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:1291:27)
+    at <anonymous> (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:1554:9)
+    at instantiateModuleShared (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:1289:9)
+    at instantiateModule (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:1557:23)
+    at getOrInstantiateModuleFromParent (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:1593:23)
+    at esmImport (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:281:20)
+    at module evaluation (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[root-of-the-server]__0hb3kgw._.js:29:258)
+    at <anonymous> (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:1291:27)
+    at <anonymous> (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:1554:9)
+    at instantiateModuleShared (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:1289:9)
+    at instantiateModule (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:1557:23)
+    at getOrInstantiateModuleFromParent (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:1593:23)
+    at esmImport (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:281:20)
+    at module evaluation (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[root-of-the-server]__0hb3kgw._.js:216:180)
+    at <anonymous> (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:1291:27)
+    at <anonymous> (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:1554:9)
+    at instantiateModuleShared (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:1289:9)
+    at instantiateModule (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:1557:23)
+    at getOrInstantiateModuleFromParent (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:1593:23)
+    at esmImport (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:281:20)
+    at <anonymous> (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[root-of-the-server]__0hb3kgw._.js:246:185)
+    at asyncModule (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:525:5)
+    at module evaluation (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[root-of-the-server]__0hb3kgw._.js:239:30)
+    at <anonymous> (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:1291:27)
+    at <anonymous> (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:1554:9)
+    at instantiateModuleShared (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:1289:9)
+    at instantiateModule (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:1557:23)
+    at getOrInstantiateModuleFromParent (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:1593:23)
+    at esmImport (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:281:20)
+    at <anonymous> (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[root-of-the-server]__0hb3kgw._.js:327:156)
+    at asyncModule (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:525:5)
+    at module evaluation (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[root-of-the-server]__0hb3kgw._.js:313:30)
+    at <anonymous> (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:1291:27)
+    at <anonymous> (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:1554:9)
+    at instantiateModuleShared (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:1289:9)
+    at instantiateModule (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:1557:23)
+    at getOrInstantiateModuleFromParent (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:1593:23)
+    at esmImport (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:281:20)
+    at <anonymous> (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[root-of-the-server]__08077uf._.js:329:152)
+    at asyncModule (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:525:5)
+    at module evaluation (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[root-of-the-server]__08077uf._.js:317:30)
+    at <anonymous> (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:1291:27)
+    at <anonymous> (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:1554:9)
+    at instantiateModuleShared (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:1289:9)
+    at instantiateModule (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:1557:23)
+    at getOrInstantiateModuleFromParent (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:1593:23)
+    at esmImport (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[turbopack]_runtime.js:281:20)
+    at module evaluation (file:///Users/nora.pavel/AIday/.next/dev/server/chunks/ssr/[root-of-the-server]__08077uf._.js:663:47)
+[ 1149778ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[ 1166651ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed:  @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2342
+[ 1167657ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2342
+[ 1168660ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2342
+[ 1169665ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2342
+[ 1170670ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2342
+[ 1171675ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2342
+[ 1176681ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2342
+[ 1181699ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[ 1183139ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[ 1183407ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431

@@ -1,0 +1,100 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "Design Library" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - img [ref=e6]
+          - text: Design Library
+        - button "Add" [ref=e8]:
+          - img
+          - text: Add
+    - main [ref=e9]:
+      - generic [ref=e10]:
+        - paragraph [ref=e11]: Team Knowledge
+        - heading "The good stuff, collected" [level=1] [ref=e12]:
+          - text: The good stuff,
+          - generic [ref=e13]:
+            - text: collected
+            - img
+        - paragraph [ref=e14]: 4 useful things the design team has gathered.
+      - generic [ref=e16]:
+        - generic [ref=e17]:
+          - img
+          - textbox "Search topics…" [ref=e18]
+        - generic [ref=e19]:
+          - generic [ref=e20] [cursor=pointer]: UX Research
+          - generic [ref=e21] [cursor=pointer]: Visual Design
+          - generic [ref=e22] [cursor=pointer]: Interaction
+          - generic [ref=e23] [cursor=pointer]: Product
+          - generic [ref=e24] [cursor=pointer]: Accessibility
+          - generic [ref=e25] [cursor=pointer]: Design Systems
+          - generic [ref=e26] [cursor=pointer]: Tools
+          - generic [ref=e27] [cursor=pointer]: Inspiration
+      - generic [ref=e28]:
+        - generic [ref=e29] [cursor=pointer]:
+          - generic [ref=e30]:
+            - generic [ref=e31]:
+              - generic [ref=e32]:
+                - generic [ref=e33]: Interaction
+                - generic [ref=e34]: Finance
+                - img [ref=e35]
+              - button [ref=e38]:
+                - img [ref=e39]
+            - generic [ref=e43]: sf
+          - generic [ref=e44]:
+            - paragraph [ref=e45]: sf
+            - generic [ref=e47]: "#fed"
+            - paragraph [ref=e48]: Added by You
+        - generic [ref=e49] [cursor=pointer]:
+          - generic [ref=e50]:
+            - generic [ref=e51]:
+              - generic [ref=e52]:
+                - generic [ref=e53]: Visual Design
+                - generic [ref=e54]: General
+                - img [ref=e55]
+              - button [ref=e58]:
+                - img [ref=e59]
+            - generic [ref=e63]: vlaami
+          - generic [ref=e64]:
+            - paragraph [ref=e65]: awfv
+            - generic [ref=e67]: "#eg"
+            - paragraph [ref=e68]: Added by You
+        - generic [ref=e69] [cursor=pointer]:
+          - generic [ref=e70]:
+            - generic [ref=e71]:
+              - generic [ref=e72]:
+                - generic [ref=e73]: Product
+                - generic [ref=e74]: General
+                - img [ref=e75]
+              - button [ref=e78]:
+                - img [ref=e79]
+            - generic [ref=e83]: Kiskuztya 2
+          - generic [ref=e84]:
+            - paragraph [ref=e85]: sdfgsg
+            - generic [ref=e87]: "#sfrg"
+            - paragraph [ref=e88]: Added by You
+        - generic [ref=e89] [cursor=pointer]:
+          - generic [ref=e90]:
+            - generic [ref=e91]:
+              - generic [ref=e92]:
+                - generic [ref=e93]: Visual Design
+                - generic [ref=e94]: General
+                - img [ref=e95]
+              - button [ref=e98]:
+                - img [ref=e99]
+            - generic [ref=e103]: Kiskutya
+          - generic [ref=e104]:
+            - paragraph [ref=e105]: éalkmrgáakengáakemger
+            - generic [ref=e107]: "#ergerg"
+            - paragraph [ref=e108]: Added by You
+    - contentinfo [ref=e109]:
+      - link "Made with Catalyst Catalyst" [ref=e110] [cursor=pointer]:
+        - /url: https://catalyst.konvert7.com/?utm_source=localhost&utm_medium=referral&utm_campaign=made-with-badge
+        - generic [ref=e111]: Made with
+        - img "Catalyst" [ref=e112]
+        - generic [ref=e113]: Catalyst
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e119] [cursor=pointer]:
+    - img [ref=e120]
+  - alert [ref=e123]

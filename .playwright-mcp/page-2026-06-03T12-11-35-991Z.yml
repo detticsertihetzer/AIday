@@ -1,0 +1,172 @@
+- generic:
+  - generic:
+    - banner:
+      - generic:
+        - link:
+          - /url: /
+          - img
+          - text: Design Library
+        - button:
+          - generic: Add entry
+    - main:
+      - generic:
+        - generic:
+          - paragraph: Team Knowledge Base
+          - heading [level=1]:
+            - text: Good stuff,
+            - generic:
+              - text: collected
+              - img
+          - paragraph: Useful things the design team has gathered — live, searchable, always growing.
+        - generic:
+          - generic: Visual Design
+          - generic: Colour tokens
+          - generic: How we name and scale our palette across themes.
+          - generic: UX Research
+          - generic: 5-second test
+          - generic: First impressions captured before bias kicks in.
+          - generic: Design Systems
+          - generic: Component API
+          - generic: Props, variants and the contract each component makes.
+          - generic: Inspiration
+          - generic: Motion library
+          - generic: Easing curves and timings the team keeps coming back to.
+          - generic: Accessibility
+          - generic: Contrast check
+          - generic: WCAG ratios and when to bend the rules responsibly.
+      - generic:
+        - heading [level=2]:
+          - text: The 08
+          - emphasis: categories.
+        - paragraph: The library is organised into 8 families — each one a different lens on how the design team thinks, researches, and builds.
+      - generic:
+        - generic:
+          - generic:
+            - img
+            - textbox:
+              - /placeholder: Search topics…
+      - generic:
+        - button:
+          - generic: 01 / 08
+          - generic: UX Research
+          - generic:
+            - generic: 0 entries
+            - generic: →
+        - button:
+          - generic: 02 / 08
+          - generic: Visual Design
+          - generic:
+            - generic: 0 entries
+            - generic: →
+        - button:
+          - generic: 03 / 08
+          - generic: Interaction
+          - generic:
+            - generic: 0 entries
+            - generic: →
+        - button:
+          - generic: 04 / 08
+          - generic: Product
+          - generic:
+            - generic: 0 entries
+            - generic: →
+        - button:
+          - generic: 05 / 08
+          - generic: Accessibility
+          - generic:
+            - generic: 0 entries
+            - generic: →
+        - button:
+          - generic: 06 / 08
+          - generic: Design Systems
+          - generic:
+            - generic: 0 entries
+            - generic: →
+        - button:
+          - generic: 07 / 08
+          - generic: Tools
+          - generic:
+            - generic: 0 entries
+            - generic: →
+        - button:
+          - generic: 08 / 08
+          - generic: Inspiration
+          - generic:
+            - generic: 0 entries
+            - generic: →
+    - contentinfo:
+      - link:
+        - /url: https://catalyst.konvert7.com/?utm_source=localhost&utm_medium=referral&utm_campaign=made-with-badge
+        - generic: Made with
+        - img
+        - generic: Catalyst
+  - region "Notifications alt+T"
+  - button [ref=e112] [cursor=pointer]:
+    - img [ref=e108]
+  - alert
+  - dialog:
+    - generic:
+      - heading [level=2]: Add to the library
+      - paragraph: Capture something useful for the design team.
+    - generic:
+      - generic:
+        - button:
+          - img
+          - text: Note
+        - button:
+          - img
+          - text: Link
+      - generic:
+        - generic: Title
+        - textbox: Test entry
+      - generic:
+        - generic: The useful bit
+        - textbox:
+          - /placeholder: What's worth remembering about this?
+          - text: Testing that add works
+      - generic:
+        - generic: Topic
+        - combobox [expanded]:
+          - generic: Pick a topic
+          - img
+        - combobox
+      - generic:
+        - generic: Industry
+        - combobox:
+          - generic: Pick an industry
+          - img
+        - combobox
+      - generic:
+        - generic: Tags
+        - textbox:
+          - /placeholder: comma, separated, tags
+      - generic:
+        - generic:
+          - img
+          - generic:
+            - paragraph: Lock this entry
+            - paragraph: Prevent others from editing or deleting it
+        - switch
+        - checkbox
+      - generic:
+        - button: Add to library
+    - button:
+      - img
+      - generic: Close
+  - listbox [ref=e152]:
+    - option "UX Research" [active] [ref=e153]:
+      - generic [ref=e155]: UX Research
+    - option "Visual Design" [ref=e156]:
+      - generic [ref=e158]: Visual Design
+    - option "Interaction" [ref=e159]:
+      - generic [ref=e161]: Interaction
+    - option "Product" [ref=e162]:
+      - generic [ref=e164]: Product
+    - option "Accessibility" [ref=e165]:
+      - generic [ref=e167]: Accessibility
+    - option "Design Systems" [ref=e168]:
+      - generic [ref=e170]: Design Systems
+    - option "Tools" [ref=e171]:
+      - generic [ref=e173]: Tools
+    - option "Inspiration" [ref=e174]:
+      - generic [ref=e176]: Inspiration
