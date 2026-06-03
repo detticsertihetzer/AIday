@@ -22,6 +22,7 @@ type ItemRow = {
   topic: string;
   industry: string;
   author: string;
+  locked: boolean;
   createdAt: Date;
   tags: { tag: { name: string } }[];
 };
@@ -37,6 +38,7 @@ function toKnowledgeItem(row: ItemRow): KnowledgeItem {
     topic: row.topic,
     industry: row.industry,
     author: row.author,
+    locked: row.locked,
     createdAt: row.createdAt,
     tags: row.tags.map((t) => t.tag.name),
   };
@@ -93,6 +95,7 @@ export async function createItem(input: CreateItemInput): Promise<KnowledgeItem>
       topic: input.topic,
       industry: input.industry,
       author: input.author,
+      locked: input.locked,
       tags: { create: tagRecords.map((tag) => ({ tagId: tag.id })) },
     },
     include: withTags,
@@ -115,6 +118,7 @@ export async function updateItem(input: UpdateItemInput): Promise<KnowledgeItem>
       topic: input.topic,
       industry: input.industry,
       author: input.author,
+      locked: input.locked,
       tags: {
         deleteMany: {},
         create: tagRecords.map((tag) => ({ tagId: tag.id })),

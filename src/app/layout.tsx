@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Manrope } from "next/font/google";
 import "./globals.css";
+import "./design-system.css";
 import type React from "react";
 import { Toaster } from "sonner";
 import Analytics from "@/components/analytics";
@@ -11,6 +12,11 @@ import { canonicalUrl, metaDescription, metaTitle, openGraph } from "@/lib/metad
 import { cn } from "@/lib/utils";
 
 const inter = Inter({ subsets: ["latin"] });
+const manrope = Manrope({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+  variable: "--font-manrope",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(conf.host),
@@ -49,14 +55,18 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className="dark scroll-smooth"
+      className="scroll-smooth"
       data-scroll-behavior="smooth"
     >
       <head>
         <Analytics environment={conf.environment} />
       </head>
       <body
-        className={cn(inter.className, "flex min-h-svh min-w-80 flex-col justify-center")}
+        className={cn(
+          inter.className,
+          manrope.variable,
+          "flex min-h-svh min-w-80 flex-col justify-center"
+        )}
       >
         {process.env.NODE_ENV === "development" && process.env.REACT_SCAN === "true" && (
           <script

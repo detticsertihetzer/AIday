@@ -19,6 +19,7 @@ model Item {
   topic     String    @map("domain") // design discipline (UX Research, Visual Design, etc.)
   industry  String    @default("General") // client sector (Banking, Retail, etc.)
   author    String
+  locked    Boolean   @default(false)
   tags      ItemTag[]
   createdAt DateTime  @default(now())
 

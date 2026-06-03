@@ -1,20 +1,11 @@
 "use client";
 
-import { Link2, MoreHorizontal, Pencil, StickyNote, Trash2 } from "lucide-react";
+import { Link2, Lock, MoreHorizontal, Pencil, StickyNote, Trash2 } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useState, useTransition } from "react";
 import { toast } from "sonner";
+import { DeleteConfirmDialog } from "@/components/delete-confirm-dialog";
 import { EditDialog } from "@/components/edit/edit-dialog";
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-} from "@/components/ui/alert-dialog";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -24,7 +15,19 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { deleteItemAction } from "@/lib/actions/items";
+import { cn } from "@/lib/utils";
 import type { KnowledgeItem } from "@/types/item";
+
+const categoryColor: Record<string, string> = {
+  "Visual Design": "color-1",
+  Product: "color-2",
+  "UX Research": "color-4",
+  Interaction: "color-3",
+  Accessibility: "color-5",
+  "Design Systems": "color-6",
+  Tools: "color-8",
+  Inspiration: "color-7",
+};
 
 export function ItemCard({ item }: { item: KnowledgeItem }) {
   const router = useRouter();
@@ -33,6 +36,8 @@ export function ItemCard({ item }: { item: KnowledgeItem }) {
   const [pending, startTransition] = useTransition();
 
   const TypeIcon = item.type === "link" ? Link2 : StickyNote;
+  const colorClass = categoryColor[item.topic] ?? "color-8";
+  const animClass = `anim-card-${colorClass.replace("color-", "")}`;
 
   function handleDelete() {
     startTransition(async () => {
@@ -45,20 +50,25 @@ export function ItemCard({ item }: { item: KnowledgeItem }) {
   return (
     <>
       <Card
-        className="group h-full cursor-pointer gap-3 transition-shadow hover:shadow-md"
+        className={cn("topic-card h-full border-0 shadow-none", colorClass, animClass)}
         onClick={() => router.push(`/item/${item.id}`)}
       >
-        <CardHeader>
-          <div className="flex items-center justify-between gap-2">
-            <div className="flex items-center gap-1.5">
-              <Badge variant="secondary">{item.topic}</Badge>
-              <Badge variant="outline">{item.industry}</Badge>
-              <TypeIcon className="size-4 shrink-0 text-muted-foreground" />
+        <CardHeader className="mb-3 p-0">
+          <div className="mb-3 flex items-center justify-between gap-2">
+            <div className="flex flex-wrap items-center gap-1.5">
+              <Badge variant="secondary" className="card-pill">
+                {item.topic}
+              </Badge>
+              <Badge variant="outline" className="card-tag">
+                {item.industry}
+              </Badge>
+              <TypeIcon className="size-4 shrink-0 opacity-40" />
+              {item.locked && <Lock className="size-3.5 shrink-0 opacity-50" />}
             </div>
-            <div className="flex items-center gap-1">
+            {!item.locked && (
               <DropdownMenu>
                 <DropdownMenuTrigger
-                  className="flex size-6 items-center justify-center rounded text-muted-foreground hover:bg-muted"
+                  className="flex size-6 items-center justify-center rounded opacity-20 hover:opacity-60"
                   onClick={(e) => e.stopPropagation()}
                 >
                   <MoreHorizontal className="size-4" />
@@ -77,49 +87,34 @@ export function ItemCard({ item }: { item: KnowledgeItem }) {
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
-            </div>
+            )}
           </div>
-          <CardTitle className="text-base leading-snug group-hover:text-primary">
-            {item.title}
-          </CardTitle>
+          <CardTitle className="card-title">{item.title}</CardTitle>
         </CardHeader>
-        <CardContent className="flex flex-col gap-3">
-          <p className="line-clamp-3 text-muted-foreground text-sm">{item.summary}</p>
+        <CardContent className="flex flex-1 flex-col p-0">
+          <p className="card-body line-clamp-3">{item.summary}</p>
           {item.tags.length > 0 && (
-            <div className="flex flex-wrap gap-1.5">
+            <div className="mb-3 flex flex-wrap gap-1.5">
               {item.tags.map((tag) => (
-                <Badge key={tag} variant="outline" className="font-normal text-xs">
+                <span key={tag} className="card-tag">
                   #{tag}
-                </Badge>
+                </span>
               ))}
             </div>
           )}
-          <p className="text-muted-foreground text-xs">Added by {item.author}</p>
+          <p className="card-footer-line">Added by {item.author}</p>
         </CardContent>
       </Card>
 
       <EditDialog item={item} open={editOpen} onOpenChange={setEditOpen} />
 
-      <AlertDialog open={deleteOpen} onOpenChange={setDeleteOpen}>
-        <AlertDialogContent>
-          <AlertDialogHeader>
-            <AlertDialogTitle>Delete this item?</AlertDialogTitle>
-            <AlertDialogDescription>
-              "{item.title}" will be permanently removed from the library.
-            </AlertDialogDescription>
-          </AlertDialogHeader>
-          <AlertDialogFooter>
-            <AlertDialogCancel>Cancel</AlertDialogCancel>
-            <AlertDialogAction
-              className="bg-destructive text-destructive-foreground hover:bg-destructive/90"
-              onClick={handleDelete}
-              disabled={pending}
-            >
-              {pending ? "Deleting…" : "Delete"}
-            </AlertDialogAction>
-          </AlertDialogFooter>
-        </AlertDialogContent>
-      </AlertDialog>
+      <DeleteConfirmDialog
+        open={deleteOpen}
+        onOpenChange={setDeleteOpen}
+        itemTitle={item.title}
+        pending={pending}
+        onConfirm={handleDelete}
+      />
     </>
   );
 }
