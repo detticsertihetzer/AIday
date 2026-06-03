@@ -1,23 +1,13 @@
 "use server";
 
-import Anthropic from "@anthropic-ai/sdk";
-
-const client = new Anthropic();
-
-const SYSTEM_PROMPT =
-  "You summarize web articles for a design team knowledge base. " +
-  "Given the text content of an article, write exactly 1-2 sentences capturing the core idea " +
-  "and why it matters to designers. Be direct and specific — no filler phrases like " +
-  "'This article discusses' or 'The author explores'.";
+const OG_PROP = /<meta[^>]+property=["']og:description["'][^>]+content=["']([^"']+)["']/i;
+const OG_CONT = /<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:description["']/i;
+const META_NAME = /<meta[^>]+name=["']description["'][^>]+content=["']([^"']+)["']/i;
+const META_CONT = /<meta[^>]+content=["']([^"']+)["'][^>]+name=["']description["']/i;
 
 export async function summarizeUrlAction(
   url: string
 ): Promise<{ summary: string } | { error: string }> {
-  if (!process.env.ANTHROPIC_API_KEY) {
-    return { error: "ANTHROPIC_API_KEY is not set." };
-  }
-
-  // Fetch the page
   let html: string;
   try {
     const res = await fetch(url, {
@@ -30,39 +20,15 @@ export async function summarizeUrlAction(
     return { error: "Could not reach that URL. Check it's publicly accessible." };
   }
 
-  // Strip tags and collapse whitespace, take first ~4000 chars
-  const text = html
-    .replace(/<script[\s\S]*?<\/script>/gi, "")
-    .replace(/<style[\s\S]*?<\/style>/gi, "")
-    .replace(/<[^>]+>/g, " ")
-    .replace(/\s+/g, " ")
-    .trim()
-    .slice(0, 4000);
+  // Try og:description first, then meta description
+  const og = OG_PROP.exec(html) ?? OG_CONT.exec(html);
+  const meta = META_NAME.exec(html) ?? META_CONT.exec(html);
 
-  if (text.length < 100) {
-    return { error: "Page had too little readable text to summarize." };
+  const summary = (og?.[1] ?? meta?.[1] ?? "").trim();
+
+  if (!summary) {
+    return { error: "This page has no description. Add a summary manually." };
   }
 
-  try {
-    const message = await client.messages.create({
-      model: "claude-haiku-4-5",
-      max_tokens: 256,
-      system: [
-        {
-          type: "text",
-          text: SYSTEM_PROMPT,
-          // Cache the system prompt — it never changes across calls
-          cache_control: { type: "ephemeral" },
-        },
-      ],
-      messages: [{ role: "user", content: `Article text:\n\n${text}` }],
-    });
-
-    const block = message.content.find((b) => b.type === "text");
-    if (!block || block.type !== "text") return { error: "No summary returned." };
-    return { summary: block.text.trim() };
-  } catch (err) {
-    const msg = err instanceof Error ? err.message : "Unknown error";
-    return { error: `AI error: ${msg}` };
-  }
+  return { summary };
 }
