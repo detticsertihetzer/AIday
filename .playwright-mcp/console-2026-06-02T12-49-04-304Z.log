@@ -1,8 +1,0 @@
-[    2700ms] [WARNING] Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://www.youtube.com') does not match the recipient window's origin ('https://www.google.com'). @ https://www.youtube.com/s/player/886cbf26/www-widgetapi.vflset/www-widgetapi.js:209
-[   13929ms] [WARNING] <link rel=preload> uses an unsupported `as` value @ https://www.notion.com/:55
-[   15146ms] [WARNING] Amplitude Logger [Warn]: Event not tracked, no destination plugins on the instance @ https://www.notion.com/_next/static/chunks/sentry.next.ae1237b68462caad.js:9
-[   15147ms] [INFO] 2026-06-02T12:49:19.451Z [error] eventTrailApiHelpers: trackFailure {error: Object} @ https://www.notion.com/_next/static/chunks/sentry.next.ae1237b68462caad.js:9
-[   15218ms] [WARNING] Amplitude Logger [Warn]: Event not tracked, no destination plugins on the instance @ https://www.notion.com/_next/static/chunks/sentry.next.ae1237b68462caad.js:9
-[   17095ms] [WARNING] [GSI_LOGGER]: Your client application uses one of the Google One Tap prompt UI status methods that may stop functioning when FedCM becomes mandatory. Refer to the migration guide to update your code accordingly and opt-in to FedCM to test your changes. Learn more: https://developers.google.com/identity/gsi/web/guides/fedcm-migration?s=dc#display_moment and https://developers.google.com/identity/gsi/web/guides/fedcm-migration?s=dc#skipped_moment @ https://www.notion.com/_next/static/chunks/sentry.next.ae1237b68462caad.js:9
-[   17099ms] [ERROR] Not signed in with the identity provider. @ https://www.notion.com/:0
-[   39472ms] [ERROR] [GSI_LOGGER]: FedCM get() rejects with NetworkError: Error retrieving a token. @ https://www.notion.com/_next/static/chunks/sentry.next.ae1237b68462caad.js:9
